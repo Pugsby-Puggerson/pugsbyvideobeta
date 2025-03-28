@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PugVideo - Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <script src="videoPlayer.js"></script>
+    <script src="showdown.js"></script>
+</head>
+<body>
+    <img src="favicon.svg" onclick="window.location = 'index.html'" width="32px" id="logo">
+    <h1 class="centerText" id="title">?</h1>
+    <div id="videoContainer"></div>
+    <div id="creatorDiv"><img src="" id="creatorIcon" width="48px" height="48px"><h3 id="creatorName">?</h3></div>
+    <p>Likes: <i id="likeCount">0</i><br><button id="likeToggle" class="button" onclick="toggleLike()">Like</button></p>
+    <p id="description">?</p>
+</body>
+</html>

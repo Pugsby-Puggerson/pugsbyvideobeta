@@ -1,0 +1,125 @@
+body {
+    background-color: #221e27;
+    color: rgb(195, 0, 255);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.centerText {
+    text-align: center;
+}
+#video {
+    background-color: rgb(32, 12, 32);
+    margin: 0 auto;
+    display: block;
+}
+#creatorIcon {
+    border-radius: 1000000000px;
+    margin-right: 10px;
+}
+#creatorName {
+    margin: 0px;
+    align-self: center;
+}
+#creatorDiv {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    position: fixed;
+    right: 10px;
+}
+#logo:hover {
+    cursor: pointer;
+}
+.list {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    gap: 20px;
+    
+}
+.list div {
+    margin-right: 10px;
+}
+.list div img {
+    border-radius: 10px;
+}
+.list div:hover {
+    cursor: pointer;
+}
+.list div p {
+    margin: 0px;
+}
+
+#videoContainer {
+    width: 100vw;
+    background-color: rgb(25, 20, 26);
+    transition: background-color 500ms ease-in-out;
+}
+#videoContainer:hover {
+    background-color: #00000000;
+}
+.timeLength {
+    background-color: #000000a4;
+    max-width: fit-content;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    right: -6px;
+    top: 140px;
+    border-radius: 10px;
+    height: 17px;
+}
+.bgGradient {
+    width: 200vw;
+    height: 200vh;
+    background: radial-gradient(circle at center, #c803ff56 0%, #00000000 40%);
+    z-index: -99999999;
+    position: absolute;
+    top: -120%;
+    left: -50%;
+}
+#yC {
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+#yC:hover {
+    opacity: 1;
+}
+.button {
+    background-color: rgb(32, 12, 32);
+    color: rgb(195, 0, 255);
+    border: 2px solid rgb(195, 0, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.button:hover {
+    background-color: rgb(195, 0, 255);
+    color: rgb(32, 12, 32);
+    cursor: pointer;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #8f54a0 #00000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 16px;
+    border: 3px inset #ffffff;
+  }
